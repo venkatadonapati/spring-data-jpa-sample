@@ -1,9 +1,0 @@
-- params:
-git:
-  repoName: spring-data-jpa-sample
-  branches:
-    - master
-scan:
-  projects:
-    - workingDirs:
-        - spring-data-jpa-sample/src
