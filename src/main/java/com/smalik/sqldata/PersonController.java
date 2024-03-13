@@ -52,6 +52,9 @@ public class PersonController {
 	 */
 	@GetMapping("/lt/{age}")
 	public List<Person> lessThan(@PathVariable int age) {
+		String test_string = null;
+		if(test_string.equals("test"))
+			System.out.println("print wrong value"+test_string);
 		return repo.findByAgeLessThan(age);
 	}
 
