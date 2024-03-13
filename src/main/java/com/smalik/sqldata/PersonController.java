@@ -30,6 +30,7 @@ public class PersonController {
 	 */
 	@PostMapping
 	public Person create(@RequestBody @Valid Person bean) {
+
 		return repo.save(bean);
 	}
 	
