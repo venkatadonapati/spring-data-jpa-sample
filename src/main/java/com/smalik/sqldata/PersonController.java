@@ -41,6 +41,7 @@ public class PersonController {
 	 */
 	@GetMapping
 	public Iterable<Person> all() {
+
 		return repo.findAll();
 	}
 	
