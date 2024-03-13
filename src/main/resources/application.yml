@@ -1,3 +1,5 @@
+server:
+  port: 7700
 spring:
   jpa:
     show-sql: true
