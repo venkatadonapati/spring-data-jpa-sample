@@ -15,5 +15,5 @@ jobs:
       - uses: jfrog/frogbot@v2
         env:
           JF_URL: https://lzb.jfrog.io
-          JF_USER: ramdonapati@gmail.com
-          JF_PASSWORD: Devel0per
+          JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
+          JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
