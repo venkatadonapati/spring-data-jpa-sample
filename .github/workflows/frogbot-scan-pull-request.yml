@@ -1,0 +1,25 @@
+name: "Frogbot Scan Pull Request"
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+permissions:
+  pull-requests: write
+  contents: read
+jobs:
+  scan-pull-request:
+    runs-on: ubuntu-latest
+    # A pull request needs to be approved before Frogbot scans it. Any GitHub user who is associated with the
+    # "frogbot" GitHub environment can approve the pull request to be scanned.
+    environment: frogbot
+    steps:
+      - uses: jfrog/frogbot@v2
+        env:
+          # [Mandatory]
+          # JFrog platform URL
+          JF_URL: https://lzb.jfrog.io
+
+           JF_USER: ramdonapati@gmail.com
+
+          # [Mandatory if JF_ACCESS_TOKEN is not provided]
+          # JFrog password. Must be provided with JF_USER
+           JF_PASSWORD: Devel0per
