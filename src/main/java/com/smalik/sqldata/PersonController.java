@@ -68,6 +68,7 @@ public class PersonController {
 	 */
 	@GetMapping("/gt/{age}")
 	public List<Person> greaterThan(@PathVariable int age) {
+
 		return repo.findByAgeGreaterThan(age);
 	}
 
