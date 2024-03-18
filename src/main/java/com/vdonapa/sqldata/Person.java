@@ -1,4 +1,4 @@
-package com.smalik.sqldata;
+package com.vdonapa.sqldata;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;

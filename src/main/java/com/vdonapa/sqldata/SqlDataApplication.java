@@ -1,4 +1,4 @@
-package com.smalik.sqldata;
+package com.vdonapa.sqldata;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
