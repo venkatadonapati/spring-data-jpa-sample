@@ -1,4 +1,4 @@
-package com.smalik.sqldata;
+package com.vdonapa.sqldata;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
