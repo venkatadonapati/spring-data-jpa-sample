@@ -2,8 +2,8 @@
     git:
       repoName: spring-data-jpa-sample
       branches:
-        - master
+        - local-branch
     scan:
       projects:
         - workingDirs:
-            - .src
+            - spring-data-jpa-sample/src
