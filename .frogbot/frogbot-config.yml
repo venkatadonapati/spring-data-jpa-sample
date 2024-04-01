@@ -6,4 +6,4 @@
     scan:
       projects:
         - workingDirs:
-            - spring-data-jpa-sample/src
+            - .src
