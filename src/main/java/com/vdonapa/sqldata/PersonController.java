@@ -80,10 +80,9 @@ public class PersonController {
 	 */
 	@GetMapping("/{name}")
 	public List<Person> name(@PathVariable String name) {
-		if(name.equals("test"))
-		{
-			System.out.println(name);
-		}
+		String test_string = null;
+		if(test_string.equals("test"))
+			System.out.println("print wrong value"+test_string);
 		return repo.findByName(name);
 	}
 }
